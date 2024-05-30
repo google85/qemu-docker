@@ -2,9 +2,8 @@ version: "3.6"
 
 services:
   win-xp:
+    image: google85/qemu-docker:win-xp
     container_name: win-xp
-    image: qemu-xp
-    build: .
     environment:
       - USER=root
       - PASSWORD=password1
