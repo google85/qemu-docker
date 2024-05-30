@@ -14,6 +14,8 @@
 # copy xp.iso ISO image in current dirrectory
 
 # run:
+make run
+# or
 docker compose up -d
 # open http://localhost:8888/vnc.html
 
