@@ -18,16 +18,16 @@
     cat <<EOF | tee docker-compose.yml
     version: "3.6"
     services:
-    win-xp:
-        image: google85/qemu-docker:win-xp
-        container_name: win-xp
-        environment:
-        - USER=root
-        - PASSWORD=password1
-        volumes:
-        - .:/isos
-        ports:
-        - 8888:80
+        win-xp:
+            image: google85/qemu-docker:win-xp
+            container_name: win-xp
+            environment:
+            - USER=root
+            - PASSWORD=password1
+            volumes:
+            - .:/isos
+            ports:
+            - 8888:80
     EOF
     ```
 
